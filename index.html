@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0d852bba2a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              mycolor: "#a3d4cb",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="flex flex-col gap-[30px] justify-center items-center min-h-[100vh] bg-black text-white bg-mycolor"
+  >
+    <h1 class="text-3xl text-black font-bold">Stopwatch by Amit</h1>
+    <div class="bg-gray-500 px-[20px] py-[30px] rounded-lg">
+      <div
+        class="flex justify-center items-center gap-[20px] text-2xl font-semibold"
+      >
+        <span id="hr">00</span>
+        <span id="min">00</span>
+        <span id="sec">00</span>
+      </div>
+
+      <div class="flex justify-center items-center gap-[50px] mt-[50px]">
+        <button
+          id="start"
+          class="px-8 py-3 font-semibold rounded-lg dark:bg-gray-100 dark:text-gray-800"
+        >
+          START
+        </button>
+        <button
+          id="stop"
+          class="px-8 py-3 font-semibold rounded-lg dark:bg-gray-100 dark:text-gray-800"
+        >
+          STOP
+        </button>
+
+        <button
+          id="reset"
+          class="px-8 py-3 font-semibold rounded-lg dark:bg-gray-100 dark:text-gray-800"
+        >
+          RESET
+        </button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
